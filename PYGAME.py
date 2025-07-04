@@ -33,8 +33,8 @@ while flag_correr:
         if evento.type == pygame.QUIT:
             flag_correr = False
 
-        if evento.type == pygame.USEREVENT:
-            if evento.type == timer_segundos:
+        if evento.type == timer_segundos:
+            if estado_actual == "juego":
                 if fin_tiempo == False:
                     segundos -= 1
                     if segundos == 0:
